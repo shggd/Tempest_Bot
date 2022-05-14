@@ -1,6 +1,6 @@
 
 
-import pyautogui,logging, time,numpy
+import pyautogui,logging, time
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s.%(msecs)03d: %(message)s', datefmt='%H:%M')
 
 class TempestBot:
@@ -83,6 +83,7 @@ class TempestBot:
         self.resultCheck()
 
 
+    #default 1000 runs
     def runBot(self,round=1000):
         logging.debug(f"Running {round} trials")
         self.calculateRegion()
